@@ -1,0 +1,19 @@
+/* LAYOUT : conteneur centré et rythme vertical des sections. */
+.navigation,
+main > section,
+.footer-contenu,
+.footer-bas {
+  width: min(100% - 2 * var(--marge), var(--largeur));
+  margin-inline: auto;
+}
+
+main > section {
+  padding-block: var(--espace-section);
+}
+
+/* Espace entre l'en-tête d'une section et son contenu */
+.section-header {
+  margin-bottom: var(--e5);
+  display: grid;
+  gap: var(--e2);
+}

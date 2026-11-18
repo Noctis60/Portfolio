@@ -1,0 +1,131 @@
+/* COMPOSANTS : briques réutilisées dans plusieurs sections. */
+
+/* --- Boutons --- */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon-petit);
+  font-weight: 600;
+  color: var(--texte);
+  background: transparent;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.bouton--primaire {
+  background: var(--bleu);
+  border-color: var(--bleu);
+  color: #fff;
+}
+.bouton--primaire:hover {
+  background: var(--bleu-fonce);
+  border-color: var(--bleu-fonce);
+}
+.bouton--secondaire:hover {
+  border-color: var(--bleu-clair);
+}
+.bouton--desactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.bouton--plein {
+  width: 100%;
+}
+
+/* --- Badges et étiquettes --- */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--carte);
+  border: 1px solid var(--bordure);
+  border-radius: 0.375rem;
+  font-family: var(--police-code);
+  font-size: var(--t-petit);
+  color: var(--texte-2);
+}
+.label,
+.label-mono {
+  font-family: var(--police-code);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texte-2);
+}
+.text-muted {
+  color: var(--texte-2);
+  font-size: 0.9375rem;
+}
+.status {
+  font-family: var(--police-code);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.status--success {
+  color: var(--succes);
+}
+
+/* --- Boîte d'icône --- */
+.icon-box {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--carte);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon-petit);
+  color: var(--bleu-clair);
+}
+
+/* --- Carte de base (fond + bordure + arrondi) --- */
+.profile-card,
+.carte-competence,
+.carte-projet,
+.timeline-carte,
+.formulaire-contact,
+.contact-carte {
+  background: var(--bg-2);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  padding: var(--e3);
+}
+
+/* --- En-tête de section : « 01 — À PROPOS » --- */
+.section-entete {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  font-family: var(--police-code);
+  font-size: var(--t-petit);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.section-entete-number {
+  color: var(--texte-2);
+}
+.section-entete-line {
+  width: 2.5rem;
+  height: 1px;
+  background: var(--bleu);
+}
+.section-entete-text {
+  color: var(--bleu-clair);
+  font-weight: 600;
+}
+.section-header p:not(.section-entete) {
+  max-width: 36rem;
+  font-size: var(--t-intro);
+}
+
+.lien-fleche {
+  color: var(--bleu-clair);
+  font-weight: 600;
+}
+.lien-fleche::after {
+  content: " →";
+}

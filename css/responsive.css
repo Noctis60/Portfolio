@@ -1,0 +1,46 @@
+/* RESPONSIVE : on AJOUTE des colonnes quand l'écran s'élargit (mobile d'abord).
+   Ce fichier est chargé en dernier pour pouvoir modifier ce qui précède. */
+
+/* Tablette : 768 px et plus */
+@media (min-width: 48rem) {
+  :root {
+    --marge: 2rem;
+  }
+  .competence-grid,
+  .projet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .champ-groupe--double {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-contenu {
+    grid-template-columns: 2fr 1fr 1fr auto;
+    align-items: start;
+  }
+  .timeline-item {
+    grid-template-columns: 9rem 1fr;
+    column-gap: var(--e3);
+  }
+  .timeline-marqueur {
+    grid-row: 1 / span 2;
+  }
+}
+
+/* Grand écran : 1024 px et plus */
+@media (min-width: 64rem) {
+  .a-propos {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--e5) 5rem;
+  }
+  .contact-contenu {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+  }
+  .projet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navigation-liste {
+    gap: 2rem;
+  }
+}

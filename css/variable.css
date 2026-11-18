@@ -1,0 +1,43 @@
+/* VARIABLES : toutes les valeurs de la charte, déclarées UNE seule fois.
+   Changer une couleur ici la change sur tout le site. */
+:root {
+  /* Couleurs (charte du cahier des charges) */
+  --bg: #0b1120;
+  --bg-2: #111827;
+  --carte: #172033;
+  --bordure: #263449;
+  --bleu: #3b82f6;
+  --bleu-fonce: #2563eb;
+  --bleu-clair: #60a5fa;
+  --texte: #f8fafc;
+  --texte-2: #94a3b8;
+  --succes: #4ade80;
+
+  /* Polices (avec solutions de secours) */
+  --police-titre: "Manrope", system-ui, sans-serif;
+  --police-texte: "Inter", system-ui, sans-serif;
+  --police-code: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Tailles de texte : clamp(min, idéal, max) s'adapte à l'écran */
+  --t-petit: 0.8125rem;
+  --t-normal: 1rem;
+  --t-intro: 1.125rem;
+  --t-h3: 1.25rem;
+  --t-h2: clamp(1.9rem, 5vw, 3rem);
+  --t-h1: clamp(2.5rem, 9vw, 4.5rem);
+
+  /* Espacements */
+  --e1: 0.5rem;
+  --e2: 1rem;
+  --e3: 1.5rem;
+  --e4: 2rem;
+  --e5: 3rem;
+  --espace-section: clamp(3.5rem, 9vw, 6rem);
+
+  /* Divers */
+  --rayon: 0.75rem;
+  --rayon-petit: 0.5rem;
+  --largeur: 72rem;
+  --marge: 1.25rem;
+  --hauteur-nav: 4.5rem;
+}
