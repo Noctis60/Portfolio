@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logan · Développeur web en formation</title>
+    <meta
+      name="description"
+      content="Portfolio de Logan, étudiant en BUT Informatique : compétences, projets et parcours."
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="navigation" aria-label="Navigation principale">
-        <a href="#accueil" class="logo">Portfolio</a>
+        <a href="#accueil" class="logo">LOGAN<span>.DEV</span></a>
         <ul class="navigation-liste">
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#a-propos">À propos</a></li>
@@ -20,195 +24,556 @@
         </ul>
       </nav>
     </header>
-    <section class="accueil" id="accueil">
-      <div class="accueil-content">
-        <p class="accueil-content-titre">Bonjour, moi c'est Logan</p>
-        <p class="accueil-content-description">
-          Je développe progressivement mes compétences en programmation et en
-          informatique, avec l’envie de comprendre, d’expérimenter et de créer
-          des solutions utiles.
-        </p>
-        <div class="boutons-accueil">
-          <a href="#projets" class="bouton">Voir mes projets</a>
-          <a href="https://github.com/Noctis60" class="bouton"
-            >Voir mon GitHub</a
-          >
+
+    <main>
+      <!-- ========== ACCUEIL ========== -->
+      <section class="accueil" id="accueil" aria-labelledby="accueil-titre">
+        <div class="accueil-content">
+          <p class="accueil-content-etiquette">Étudiant en BUT Informatique</p>
+          <h1 class="accueil-content-titre" id="accueil-titre">
+            Bonjour, moi c’est <span class="texte-accent">Logan.</span>
+          </h1>
+          <p class="accueil-content-sous-titre">
+            Je construis, j’apprends et je développe.
+          </p>
+          <p class="accueil-content-description">
+            Je développe progressivement mes compétences en programmation et en
+            informatique, avec l’envie de comprendre, d’expérimenter et de créer
+            des solutions utiles.
+          </p>
+          <div class="boutons-accueil">
+            <a href="#projets" class="bouton bouton--primaire"
+              >Découvrir mes projets</a
+            >
+            <a
+              href="https://github.com/Noctis60"
+              class="bouton bouton--secondaire"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Voir mon GitHub</a
+            >
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="a-propos" id="a-propos">
-      <div class="a-propos-texte">
-        <h1 class="a-propos-titre">Comprendre avant de construire.</h1>
-        <p class="a-propos-description1">
-          Actuellement étudiant en
-          <strong>BUT Informatique, parcours A</strong>, je construis pas à pas
-          une base solide en développement logiciel et en informatique.
-        </p>
-        <p class="a-propos-description2">
-          Ma formation me permet d’explorer la programmation, le développement
-          web, les systèmes et les réseaux. J’aime comprendre comment les outils
-          fonctionnent, résoudre des problèmes concrets et transformer une idée
-          en projet utilisable.
-        </p>
-        <p class="a-propos-description3">
-          Mon objectif est simple : continuer à apprendre, gagner en autonomie
-          et contribuer à des projets où la qualité du code et l’expérience
-          utilisateur comptent réellement.
-        </p>
-        <a href="#contact">Échangeons sur mon parcours</a>
-      </div>
-      <div class="a-propos-carte">
-        <aside class="profile-card" aria-label="Aperçu du profil">
-          <!-- Barre du haut -->
-          <div class="profile-card__bar">
-            <span class="label-mono">profil.logan</span>
-            <span class="status status--success">En construction</span>
-          </div>
+      </section>
 
-          <!-- Les trois lignes -->
-          <ul class="info-list">
-            <li class="info-item">
-              <span class="icon-box" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="7" r="4" />
-                  <path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2" />
-                </svg>
-              </span>
-              <div class="info-item__text">
-                <p class="label">Formation actuelle</p>
-                <p class="info-item__title">BUT Informatique</p>
-                <p class="text-muted">
-                  Parcours A · Réalisation d’applications
-                </p>
-              </div>
-            </li>
+      <!-- ========== À PROPOS ========== -->
+      <section class="a-propos" id="a-propos" aria-labelledby="a-propos-titre">
+        <div class="a-propos-texte">
+          <p class="section-entete">
+            <span class="section-entete-number" aria-hidden="true">01</span>
+            <span class="section-entete-line" aria-hidden="true"></span>
+            <span class="section-entete-text">À propos</span>
+          </p>
+          <h2 class="a-propos-titre" id="a-propos-titre">
+            Comprendre avant de construire.
+          </h2>
+          <p class="a-propos-description1">
+            Actuellement étudiant en
+            <strong>BUT Informatique, parcours A</strong>, je construis pas à
+            pas une base solide en développement logiciel et en informatique.
+          </p>
+          <p class="a-propos-description2">
+            Ma formation me permet d’explorer la programmation, le développement
+            web, les systèmes et les réseaux. J’aime comprendre comment les
+            outils fonctionnent, résoudre des problèmes concrets et transformer
+            une idée en projet utilisable.
+          </p>
+          <p class="a-propos-description3">
+            Mon objectif est simple : continuer à apprendre, gagner en autonomie
+            et contribuer à des projets où la qualité du code et l’expérience
+            utilisateur comptent réellement.
+          </p>
+          <a href="#contact" class="lien-fleche">Échangeons sur mon parcours</a>
+        </div>
 
-            <li class="info-item">
-              <span class="icon-box" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                  <polyline points="2 17 12 22 22 17" />
-                  <polyline points="2 12 12 17 22 12" />
-                </svg>
-              </span>
-              <div class="info-item__text">
-                <p class="label">Centres d’intérêt</p>
-                <p class="info-item__title">Web, code &amp; systèmes</p>
-                <p class="text-muted">Cybersécurité · Infrastructures</p>
-              </div>
-            </li>
-
-            <li class="info-item">
-              <span class="icon-box" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </span>
-              <div class="info-item__text">
-                <p class="label">Objectif</p>
-                <p class="info-item__title">Progresser par la pratique</p>
-                <p class="text-muted">Créer, tester, comprendre, améliorer</p>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Encadré approche -->
-          <div class="profile-card__note">
-            <span class="profile-card__note-icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="4 17 10 11 4 5" />
-                <line x1="12" y1="19" x2="20" y2="19" />
-              </svg>
-            </span>
-            <div>
-              <p class="profile-card__note-title">Approche</p>
-              <blockquote class="text-muted">
-                « Rester curieux, avancer avec méthode. »
-              </blockquote>
+        <div class="a-propos-carte">
+          <aside class="profile-card" aria-label="Aperçu du profil">
+            <!-- Barre du haut -->
+            <div class="profile-card__bar">
+              <span class="label-mono">profil.logan</span>
+              <span class="status status--success">En construction</span>
             </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-    <section
-      class="competences"
-      id="competences"
-      aria-labelledby="competences-titre"
-    >
-      <header class="section-header">
-        <p class="section-eyebrow">
-          <span class="section-entete-number" aria-hidden="true">02</span>
-          <span class="section-entete-line" aria-hidden="true"></span>
-          <span class="section-entete-text">Compétences</span>
-        </p>
 
-        <h2 id="competences-titre">
-          Des bases solides, une progression continue.
-        </h2>
-        <p class="texte-description-competences">
-          Une vision transparente de ce que je pratique aujourd’hui et de ce que
-          je continue à approfondir.
-        </p>
-      </header>
+            <!-- Les trois lignes -->
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="icon-box" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2" />
+                  </svg>
+                </span>
+                <div class="info-item__text">
+                  <p class="label">Formation actuelle</p>
+                  <p class="info-item__title">BUT Informatique</p>
+                  <p class="text-muted">
+                    Parcours A · Réalisation d’applications
+                  </p>
+                </div>
+              </li>
 
-      <!-- contenu de la section -->
-      <div class="competence-grid">
-        <!-- Carte 1 : Développement Web -->
-        <article class="carte-competence">
-          <div class="carte-competence-top">
-            <span class="icon-box" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+              <li class="info-item">
+                <span class="icon-box" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </span>
+                <div class="info-item__text">
+                  <p class="label">Centres d’intérêt</p>
+                  <p class="info-item__title">Web, code &amp; systèmes</p>
+                  <p class="text-muted">Cybersécurité · Infrastructures</p>
+                </div>
+              </li>
+
+              <li class="info-item">
+                <span class="icon-box" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </span>
+                <div class="info-item__text">
+                  <p class="label">Objectif</p>
+                  <p class="info-item__title">Progresser par la pratique</p>
+                  <p class="text-muted">Créer, tester, comprendre, améliorer</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Encadré approche -->
+            <div class="profile-card__note">
+              <span class="profile-card__note-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
+              </span>
+              <div>
+                <p class="profile-card__note-title">Approche</p>
+                <blockquote class="text-muted">
+                  « Rester curieux, avancer avec méthode. »
+                </blockquote>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========== COMPÉTENCES ========== -->
+      <section
+        class="competences"
+        id="competences"
+        aria-labelledby="competences-titre"
+      >
+        <header class="section-header">
+          <p class="section-entete">
+            <span class="section-entete-number" aria-hidden="true">02</span>
+            <span class="section-entete-line" aria-hidden="true"></span>
+            <span class="section-entete-text">Compétences</span>
+          </p>
+
+          <h2 id="competences-titre">
+            Des bases solides, une progression continue.
+          </h2>
+          <p class="texte-description-competences">
+            Une vision transparente de ce que je pratique aujourd’hui et de ce
+            que je continue à approfondir.
+          </p>
+        </header>
+
+        <div class="competence-grid">
+          <!-- Carte 1 : Développement Web -->
+          <article class="carte-competence">
+            <div class="carte-competence-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </span>
+              <span class="badge">Bases acquises</span>
+            </div>
+
+            <h3 class="carte-competence-titre">Développement Web</h3>
+
+            <ul class="liste-competences">
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">HTML5</p>
+                  <p class="competence-item__desc">
+                    Structure &amp; sémantique
+                  </p>
+                </div>
+              </li>
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">CSS3</p>
+                  <p class="competence-item__desc">Mise en page responsive</p>
+                </div>
+              </li>
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">JavaScript</p>
+                  <p class="competence-item__desc">
+                    Fondamentaux en progression
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Carte 2 : Programmation -->
+          <article class="carte-competence">
+            <div class="carte-competence-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </span>
+              <span class="badge">En apprentissage</span>
+            </div>
+
+            <h3 class="carte-competence-titre">Programmation</h3>
+
+            <ul class="liste-competences">
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">Python</p>
+                  <p class="competence-item__desc">
+                    Logique &amp; scripts simples
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Carte 3 : Environnement -->
+          <article class="carte-competence">
+            <div class="carte-competence-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
+              </span>
+              <span class="badge">Pratique régulière</span>
+            </div>
+
+            <h3 class="carte-competence-titre">Environnement</h3>
+
+            <ul class="liste-competences">
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">Linux</p>
+                  <p class="competence-item__desc">Utilisation quotidienne</p>
+                </div>
+              </li>
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">Commandes Linux</p>
+                  <p class="competence-item__desc">Notions acquises</p>
+                </div>
+              </li>
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">Git</p>
+                  <p class="competence-item__desc">Gestion de versions</p>
+                </div>
+              </li>
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">GitHub</p>
+                  <p class="competence-item__desc">
+                    Collaboration &amp; projets
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Carte 4 : Cybersécurité -->
+          <article class="carte-competence">
+            <div class="carte-competence-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+              </span>
+              <span class="badge">Notions fondamentales</span>
+            </div>
+
+            <h3 class="carte-competence-titre">Cybersécurité</h3>
+
+            <ul class="liste-competences">
+              <li class="competence-item">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="competence-item__name">
+                    Introduction à la cybersécurité
+                  </p>
+                  <p class="competence-item__desc">
+                    Certification Cisco NetAcad
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== PROJETS ========== -->
+      <section class="projets" id="projets" aria-labelledby="projets-titre">
+        <header class="section-header">
+          <p class="section-entete">
+            <span class="section-entete-number" aria-hidden="true">03</span>
+            <span class="section-entete-line" aria-hidden="true"></span>
+            <span class="section-entete-text">Projets</span>
+          </p>
+
+          <h2 id="projets-titre">Apprendre en construisant.</h2>
+          <p class="texte-description-projets">
+            Des projets concrets pour mettre en pratique mes connaissances et
+            documenter ma progression.
+          </p>
+        </header>
+
+        <div class="projet-grid">
+          <!-- Projet 1 : BudgetÉtu -->
+          <article class="carte-projet">
+            <div class="carte-projet-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                  <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                  <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                </svg>
+              </span>
+              <span class="badge">Projet étudiant · En développement</span>
+            </div>
+
+            <h3 class="carte-projet-titre">BudgetÉtu</h3>
+
+            <p class="carte-projet-description">
+              Une application web de gestion budgétaire pensée pour aider les
+              étudiants à suivre leurs revenus, leurs dépenses et mieux
+              visualiser leur budget au quotidien.
+            </p>
+
+            <ul class="carte-projet-liste">
+              <li>Suivi des transactions</li>
+              <li>Vue synthétique du budget</li>
+              <li>Interface responsive</li>
+            </ul>
+
+            <ul
+              class="carte-projet-technos"
+              aria-label="Technologies utilisées"
+            >
+              <li class="badge badge--techno">HTML5</li>
+              <li class="badge badge--techno">CSS3</li>
+              <li class="badge badge--techno">JavaScript</li>
+            </ul>
+
+            <div class="carte-projet-actions">
+              <!-- Remplace ces deux <span> par des <a href="…"> dès que
+                   la démo et le dépôt GitHub sont publiés -->
+              <span
+                class="bouton bouton--primaire bouton--desactive"
+                aria-disabled="true"
+                >Voir le projet</span
               >
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path
-                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                />
-              </svg>
-            </span>
-            <span class="badge">Bases acquises</span>
-          </div>
+              <span
+                class="bouton bouton--secondaire bouton--desactive"
+                aria-disabled="true"
+                >Code source</span
+              >
+            </div>
+            <p class="carte-projet-note">
+              La démonstration et le dépôt seront ajoutés dès leur publication.
+            </p>
+          </article>
 
-          <h3 class="skill-card__title">Développement Web</h3>
-
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="check-icon" aria-hidden="true">
+          <!-- Projet 2 : Site Web Portfolio -->
+          <article class="carte-projet">
+            <div class="carte-projet-top">
+              <span class="icon-box" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -217,57 +582,68 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <polyline points="20 6 9 17 4 12" />
+                  <rect x="3" y="4" width="18" height="16" rx="2" ry="2" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
                 </svg>
               </span>
-              <div>
-                <p class="skill-item__name">HTML5</p>
-                <p class="skill-item__desc">Structure &amp; sémantique</p>
-              </div>
-            </li>
-            <li class="skill-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="skill-item__name">CSS3</p>
-                <p class="skill-item__desc">Mise en page responsive</p>
-              </div>
-            </li>
-            <li class="skill-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="skill-item__name">JavaScript</p>
-                <p class="skill-item__desc">Fondamentaux en progression</p>
-              </div>
-            </li>
-          </ul>
-        </article>
+              <span class="badge">Projet personnel</span>
+            </div>
 
-        <!-- Carte 2 : Programmation -->
-        <article class="carte-competence">
-          <div class="carte-competence-top">
-            <span class="icon-box" aria-hidden="true">
+            <h3 class="carte-projet-titre">Site Web Portfolio</h3>
+
+            <p class="carte-projet-description">
+              Création d’un site web personnel pour présenter mes compétences,
+              projets et parcours. Utilisation de HTML, CSS et JavaScript pour
+              une expérience utilisateur fluide et responsive.
+            </p>
+
+            <ul
+              class="carte-projet-technos"
+              aria-label="Technologies utilisées"
+            >
+              <li class="badge badge--techno">HTML5</li>
+              <li class="badge badge--techno">CSS3</li>
+              <li class="badge badge--techno">JavaScript</li>
+            </ul>
+
+            <div class="carte-projet-actions">
+              <a href="#contact" class="bouton bouton--secondaire"
+                >Me contacter</a
+              >
+            </div>
+          </article>
+
+          <!-- Projet 3 : emplacement futur projet -->
+          <article class="carte-projet carte-projet--a-venir">
+            <div class="carte-projet-top">
+              <span class="badge">À venir</span>
+            </div>
+            <h3 class="carte-projet-titre">Prochain projet</h3>
+            <p class="carte-projet-description">
+              Une nouvelle expérimentation prendra bientôt place ici.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="parcours" id="parcours" aria-labelledby="parcours-titre">
+        <header class="section-header">
+          <p class="section-entete">
+            <span class="section-entete-number" aria-hidden="true">04</span>
+            <span class="section-entete-line" aria-hidden="true"></span>
+            <span class="section-entete-text">Parcours</span>
+          </p>
+
+          <h2 id="parcours-titre">Formation & certifications.</h2>
+          <p class="texte-description-parcours">
+            Des étapes qui structurent mon apprentissage et ouvrent de nouveaux
+            domaines à explorer.
+          </p>
+        </header>
+
+        <ol class="timeline">
+          <!-- Étape 1 : BUT Informatique -->
+          <li class="timeline-item">
+            <span class="timeline-marqueur" aria-hidden="true">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -280,134 +656,33 @@
                 <polyline points="8 6 2 12 8 18" />
               </svg>
             </span>
-            <span class="badge">En apprentissage</span>
-          </div>
 
-          <h3 class="skill-card__title">Programmation</h3>
+            <!-- Quand tu auras une date précise, remplace le span par :
+           <time class="timeline-date" datetime="2025-09">Septembre 2025</time> -->
+            <span class="timeline-date">En cours</span>
 
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="skill-item__name">Python</p>
-                <p class="skill-item__desc">Logique &amp; scripts simples</p>
-              </div>
-            </li>
-          </ul>
-        </article>
+            <article class="timeline-carte">
+              <p class="timeline-carte-type">Formation</p>
+              <h3 class="timeline-carte-titre">BUT Informatique</h3>
+              <p class="timeline-carte-sous-titre">
+                Parcours A · Réalisation d’applications
+              </p>
+              <p class="timeline-carte-description">
+                Acquisition des fondamentaux en programmation, développement
+                web, bases de données, systèmes et gestion de projets
+                informatiques.
+              </p>
+              <ul class="timeline-carte-badges" aria-label="Domaines abordés">
+                <li class="badge badge--techno">Développement</li>
+                <li class="badge badge--techno">Algorithmique</li>
+                <li class="badge badge--techno">Systèmes</li>
+              </ul>
+            </article>
+          </li>
 
-        <!-- Carte 3 : Environnement -->
-        <article class="carte-competence">
-          <div class="carte-competence-top">
-            <span class="icon-box" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="4 17 10 11 4 5" />
-                <line x1="12" y1="19" x2="20" y2="19" />
-              </svg>
-            </span>
-            <span class="badge">Pratique régulière</span>
-          </div>
-
-          <h3 class="carte-competence-titre">Environnement</h3>
-
-          <ul class="liste-competences">
-            <li class="competence-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="competence-item__name">Linux</p>
-                <p class="competence-item__desc">Utilisation quotidienne</p>
-              </div>
-            </li>
-            <li class="competence-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="competence-item__name">Commandes Linux</p>
-                <p class="competence-item__desc">Notions acquises</p>
-              </div>
-            </li>
-            <li class="competence-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="competence-item__name">Git</p>
-                <p class="competence-item__desc">Gestion de versions</p>
-              </div>
-            </li>
-            <li class="competence-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="competence-item__name">GitHub</p>
-                <p class="competence-item__desc">Collaboration &amp; projets</p>
-              </div>
-            </li>
-          </ul>
-        </article>
-
-        <!-- Carte 4 : Cybersécurité -->
-        <article class="carte-competence">
-          <div class="carte-competence__top">
-            <span class="icon-box" aria-hidden="true">
+          <!-- Étape 2 : Certification Cisco NetAcad -->
+          <li class="timeline-item">
+            <span class="timeline-marqueur" aria-hidden="true">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -420,107 +695,363 @@
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
             </span>
-            <span class="badge">Notions fondamentales</span>
-          </div>
 
-          <h3 class="carte-competence-titre">Cybersécurité</h3>
+            <span class="timeline-date">Date à préciser</span>
 
-          <ul class="liste-competences">
-            <li class="competence-item">
-              <span class="check-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div>
-                <p class="competence-item__name">
-                  Introduction à la cybersécurité
-                </p>
-                <p class="competence-item__desc">Certification Cisco NetAcad</p>
-              </div>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <section class="projets" id="projets" aria-labelledby="projets-titre">
-      <header class="section-header">
-        <p class="section-entete">
-          <span class="section-entete-number" aria-hidden="true">03</span>
-          <span class="section-entete-line" aria-hidden="true"></span>
-          <span class="section-entete-text">Projets</span>
-        </p>
-
-        <h2 id="projets-titre">Apprendre en construisant.</h2>
-        <p class="texte-description-projets">
-          Des projets concrets pour mettre en pratique mes connaissances et
-          documenter ma progression.
-        </p>
-      </header>
-
-      <!-- contenu de la section -->
-      <div class="projet-grid">
-        <!-- Projet 1 : Site Web Portfolio -->
-        <article class="carte-projet">
-          <div class="carte-projet-top">
-            <span class="icon-box" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="4" width="18" height="16" rx="2" ry="2" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-            </span>
-            <span class="badge">Projet personnel</span>
-          </div>
-
-          <h3 class="carte-projet-titre">Site Web Portfolio</h3>
-
-          <p class="carte-projet-description">
-            Création d’un site web personnel pour présenter mes compétences,
-            projets et parcours. Utilisation de HTML, CSS et JavaScript pour une
-            expérience utilisateur fluide et responsive.
+            <article class="timeline-carte">
+              <p class="timeline-carte-type">Certification</p>
+              <h3 class="timeline-carte-titre">
+                Introduction à la cybersécurité
+              </h3>
+              <p class="timeline-carte-sous-titre">
+                Cisco Networking Academy · NetAcad
+              </p>
+              <p class="timeline-carte-description">
+                Découverte des menaces numériques, des principes de protection
+                des données et des bonnes pratiques fondamentales en
+                cybersécurité.
+              </p>
+              <p class="timeline-statut">
+                <span class="check-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                Certification obtenue
+              </p>
+            </article>
+          </li>
+        </ol>
+      </section>
+      <!-- ========== CONTACT ========== -->
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-titre-section"
+      >
+        <header class="section-header">
+          <p class="section-entete">
+            <span class="section-entete-number" aria-hidden="true">05</span>
+            <span class="section-entete-line" aria-hidden="true"></span>
+            <span class="section-entete-text">Contact</span>
           </p>
 
-          <a href="#contact" class="bouton">Contactez-moi</a>
-        </article>
+          <h2 id="contact-titre-section">Construisons la suite.</h2>
+          <p class="texte-description-contact">
+            Une opportunité, un projet ou simplement une question ? Je serai
+            ravi d’échanger avec vous.
+          </p>
+        </header>
 
-        <!-- Projet 2 : Application de Gestion de Tâches -->
-        <article class="carte-projet">
-          <div class="carte-projet-top">
-            <span class="icon-box" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <!-- formes de l'icône -->
-              </svg>
-            </span>
-            <span class="badge">…</span>
+        <div class="contact-contenu">
+          <!-- Colonne gauche : moyens de contact -->
+          <div class="contact-infos">
+            <h3 class="contact-titre">Restons en contact.</h3>
+            <p class="contact-texte">
+              Je suis ouvert aux échanges autour du développement, de
+              l’informatique et des opportunités étudiantes.
+            </p>
+
+            <ul class="contact-liste">
+              <!-- GitHub -->
+              <li>
+                <a
+                  class="contact-carte"
+                  href="https://github.com/Noctis60"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="icon-box" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                      />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                  </span>
+                  <span class="contact-carte-texte">
+                    <span class="label">GitHub</span>
+                    <span class="contact-carte-valeur">@Noctis60</span>
+                  </span>
+                  <span class="contact-carte-externe" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </span>
+                  <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+                </a>
+              </li>
+
+              <!-- LinkedIn -->
+              <li>
+                <a
+                  class="contact-carte"
+                  href="https://www.linkedin.com/in/logan-kenjy-constancy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="icon-box" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      />
+                      <rect x="2" y="9" width="4" height="12" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </span>
+                  <span class="contact-carte-texte">
+                    <span class="label">LinkedIn</span>
+                    <span class="contact-carte-valeur"
+                      >Logan Kenjy Constancy</span
+                    >
+                  </span>
+                  <span class="contact-carte-externe" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </span>
+                  <span class="sr-only">(s’ouvre dans un nouvel onglet)</span>
+                </a>
+              </li>
+
+              <!-- E-mail (pas encore de lien) -->
+              <li>
+                <div class="contact-carte contact-carte--inactive">
+                  <span class="icon-box" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                  </span>
+                  <span class="contact-carte-texte">
+                    <span class="label">E-mail</span>
+                    <span class="contact-carte-valeur"
+                      >À renseigner prochainement</span
+                    >
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <p class="contact-disponibilite">
+              <span
+                class="contact-disponibilite-point"
+                aria-hidden="true"
+              ></span>
+              <span>
+                <strong>Disponible pour échanger</strong><br />
+                <span class="text-muted">
+                  Réponse dès qu’une adresse de contact sera publiée.
+                </span>
+              </span>
+            </p>
           </div>
 
-          <h3 class="carte-projet-titre">…</h3>
-          <p class="carte-projet-description">…</p>
-          <a href="…" class="bouton">…</a>
-        </article>
+          <!-- Colonne droite : formulaire visuel -->
+          <form class="formulaire-contact" aria-labelledby="formulaire-titre">
+            <h3 class="sr-only" id="formulaire-titre">Formulaire de contact</h3>
+
+            <div class="champ-groupe champ-groupe--double">
+              <div class="champ">
+                <label for="contact-nom">Votre nom</label>
+                <input
+                  type="text"
+                  id="contact-nom"
+                  name="nom"
+                  placeholder="Jean Dupont"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="champ">
+                <label for="contact-email">Votre e-mail</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="jean@entreprise.fr"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="champ">
+              <label for="contact-sujet">Sujet</label>
+              <input
+                type="text"
+                id="contact-sujet"
+                name="sujet"
+                placeholder="À propos d’une opportunité…"
+                required
+              />
+            </div>
+
+            <div class="champ">
+              <label for="contact-message">Votre message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                placeholder="Bonjour Logan, je vous contacte pour…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="bouton bouton--primaire bouton--plein">
+              Préparer le message
+            </button>
+
+            <p class="formulaire-statut" role="status" aria-live="polite"></p>
+            <p class="formulaire-note">
+              Formulaire visuel : aucun envoi automatique n’est encore
+              configuré.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-contenu">
+        <!-- Marque -->
+        <div class="footer-marque">
+          <a href="#accueil" class="logo">LOGAN<span>.DEV</span></a>
+          <p class="text-muted">
+            Développeur en formation.<br />
+            Curieux par nature.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="footer-colonne" aria-label="Navigation du pied de page">
+          <p class="footer-titre">Navigation</p>
+          <ul class="footer-liste">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Liens professionnels -->
+        <div class="footer-colonne">
+          <p class="footer-titre">Me retrouver</p>
+          <ul class="footer-liste">
+            <li>
+              <a
+                href="https://github.com/Noctis60"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub<span class="sr-only">
+                  (s’ouvre dans un nouvel onglet)</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/logan-kenjy-constancy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn<span class="sr-only">
+                  (s’ouvre dans un nouvel onglet)</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Retour en haut -->
+        <a
+          href="#accueil"
+          class="footer-haut"
+          aria-label="Retour en haut de la page"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </a>
       </div>
-      <!-- ferme .projet-grid -->
-    </section>
+
+      <div class="footer-bas">
+        <p>© 2026 LOGAN.DEV</p>
+        <p>
+          Conçu et développé par Logan
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
